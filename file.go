@@ -4,6 +4,8 @@ import (
 	"log"
 
 	"github.com/containerd/containerd"
+
+	"github.com/deitch/go-import-tester-sub/initter"
 )
 
 // Const is a constant
@@ -15,4 +17,8 @@ func Func() {
 		log.Fatal(err)
 	}
 
+}
+
+func Init() {
+	_ = initter.Const
 }
